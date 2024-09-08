@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Francisco Restaurant Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form-container">
+            <h2>Add Restaurant Experience</h2>
+            <form id="restaurant-form">
+                <input type="text" id="name" placeholder="Restaurant Name" required>
+                <textarea id="experience" placeholder="Your Experience" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <input type="file" id="video" accept="video/*,.mov">
+                <button type="submit">Add Restaurant</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
